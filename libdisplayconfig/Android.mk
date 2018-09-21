@@ -1,3 +1,4 @@
+ifeq ($(TARGET_USE_COMMONSYS_DISPLAY_LIBRARY), true)
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -14,3 +15,4 @@ ifeq ($(LLVM_SA), true)
 endif
 
 include $(BUILD_SHARED_LIBRARY)
+endif
